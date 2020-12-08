@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <h1>Upload new File</h1>
+    <form method=post enctype=multipart/form-data action="/upload">
+        <input type=file name=file>
+        <input type=submit value=Upload>
+    </form>
+    <form method=post enctype=multipart/form-data action="/lib">
+        <div class="wrap-input100 validate-input m-b-20" data-validate="Enter bookname">
+            <input class="input100" type="text" name="bookname" placeholder="bookname">
+            <span class="focus-input100"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input m-b-25" data-validate = "author">
+            <input class="input100" type="text" name="author" placeholder="author">
+            <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 validate-input m-b-25" data-validate = "genre">
+            <input class="input100" type="text" name="genre" placeholder="Genre">
+            <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 validate-input m-b-25" data-validate = "publshed_yr">
+            <input class="input100" type="text" name="published_yr" placeholder="published_yr">
+            <span class="focus-input100"></span>
+        </div>
+        <div class="container-login100-form-btn">
+            <button class="login100-form-btn">
+                Submit
+            </button>
+        </div>
+    </form>
+</head>
+<body>
+
+</body>
+<script src="/static/js/main.js"></script>
+</html>

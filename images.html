@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello Results Page!</h1>
+<a href="/bimage">Back</a><p>
+<ul>
+{% for filename in img_dir %}
+    <li><img style="height: 150px" src="{{ url_for('static',filename=img_name) }}"></li>
+{% endfor %}
+</ul>
+</body>
+</html>
